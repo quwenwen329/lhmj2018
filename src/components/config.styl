@@ -11,12 +11,11 @@ html
 
 a
   text-decoration none
-  &:visited
-    color inherit
+  color $a-color
   &:hover
-    color $a-color
+    color $a-color !important
   &.router-link-exact-active
-    color $a-color
+    color $a-color !important
 
 Context()
   width $w-context
