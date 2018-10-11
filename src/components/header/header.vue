@@ -1,19 +1,25 @@
 <template>
   <div class="header">
-    <div class="banner"></div>
     <div class="nav-wapper">
       <div class="nav">
         <div class="left">
-          <div class="logo2"></div>
+          <i class="lhmj_logo"></i>
           <div class="line"></div>
-          <div class="logo1"></div>
+          <i class="dhqh_logo"></i>
         </div>
         <div class="right">
-          <a>导航</a>
-          <a>导航</a>
-          <a>导航</a>
-          <a>导航</a>
-          <a>导航</a>
+          <router-link :to="{ name: '大赛首页'}">大赛首页</router-link>
+          <router-link :to="{ name: '奖项设置'}">奖项设置</router-link>
+          <router-link :to="{ name: '报名参赛'}">报名参赛</router-link>
+          <router-link :to="{ name: '实盘排行'}">实盘排行</router-link>
+          <router-link :to="{ name: '新闻公告'}">新闻公告</router-link>
+          <router-link :to="{ name: '历届荣耀'}">历届荣耀</router-link>
+          <span>
+            您好，请<a class="login" href="/">登录</a>
+          </span>
+        </div>
+        <div class="margin">
+          <div class="triangle"></div>
         </div>
       </div>
     </div>
