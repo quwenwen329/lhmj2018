@@ -14,8 +14,8 @@
           <router-link :to="{ name: '实盘排行'}">实盘排行</router-link>
           <router-link :to="{ name: '新闻公告'}">新闻公告</router-link>
           <router-link :to="{ name: '历届荣耀'}">历届荣耀</router-link>
-          <span>
-            您好，请<a class="login" href="/">登录</a>
+          <span class="login">
+            您好，请<a  href="/">登录</a>
           </span>
         </div>
         <div class="margin">

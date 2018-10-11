@@ -1,14 +1,18 @@
 @import "../config.styl"
+
+$nav-bg-color = rgba(0, 0, 0, .8) //背景色
+$nav-height = 54px //右边行高
+$nav-height-left = 90px //左边边行高
+$pic-righr-margin = 142px //图片与导航间距
+$color = #fff //字体颜色
+$m-right = 34px //导航时间间距
+$f-login = 12px //登录字体大小
+$m-login = 92px //登录左边距
+
 .header
   position relative
-  width 100%
   height 490px
   background-image("banner.png")
-  $nav-bg-color = rgba(0, 0, 0, .8)
-  $nav-height = 54px
-  $nav-height-left = 90px
-  $pic-righr-margin = 142px
-  $color = #fff
   .nav-wapper
     position absolute
     top 0
@@ -62,8 +66,15 @@
         flex 1
         height $nav-height
         line-height $nav-height
+        font-size 0
         a
-          margin-right 34px
+          margin-right $m-right
+          font-size $f-size
         .login
-          text-decoration underline
-          color $a-color
+          margin-left $m-login - $m-right
+          font-size $f-login
+          a
+            font-size $f-login
+            text-decoration underline
+            color $a-color
+            margin-right 0

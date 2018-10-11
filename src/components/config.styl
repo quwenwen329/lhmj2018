@@ -1,8 +1,13 @@
 $f-color = #303030
 $a-color = #3d8afe
+$f-size = 16px
+$w-context = 1200px
 
 html
   color $f-color
+  font-size $f-size
+  box-sizing: border-box
+  min-width $w-context
 
 a
   text-decoration none
@@ -14,7 +19,7 @@ a
     color $a-color
 
 Context()
-  width 1200px
+  width $w-context
   margin auto
 
 background-image($url)
