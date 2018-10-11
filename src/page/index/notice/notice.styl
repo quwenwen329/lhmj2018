@@ -1,0 +1,29 @@
+@import "../../../components/config.styl"
+
+$notice-height = 40px
+$notice-line-height = 20px
+$notice-color = #ef5637
+.notice-wapper
+  height $notice-height
+  line-height $notice-height
+  box-shadow 0px 0px 20px rgba(0,0,0,0.5)
+  .notice
+    font-size 0
+    Context()
+    .line
+      width 3px
+      height  $notice-line-height
+      margin-top (($notice-height - $notice-line-height) / 2)
+      background-color $notice-color
+      display inline-block
+      vertical-align top
+    .title
+      font-size $f-size
+      color $notice-color
+      margin-left 14px
+      margin-right 18px
+    .text
+      font-size $f-size
+    .more
+      font-size 14px
+      float right

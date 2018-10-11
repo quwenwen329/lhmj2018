@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Index from '@/page/index';
+import Index from '@/page/index/index';
 import todo from '@/page/todo';
 
 Vue.use(Router);
