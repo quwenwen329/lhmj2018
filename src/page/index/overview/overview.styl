@@ -1,0 +1,104 @@
+@import "../../../components/config.styl"
+
+.overview
+  Context()
+  padding-bottom 70px
+  .title-wapper
+    text-align center
+    .title
+      image('title.png', 796px, 49px)
+  .datas
+    margin auto
+    margin-top 55px
+    display flex
+    justify-content space-between
+    width 1045px
+    h = 80px
+    .item
+      height h
+      line-height h
+      font-size 22px
+      color #333333
+      text-align center
+      &:first-child
+        text-align left
+      &:last-child
+        text-align right
+      i
+        vertical-align top
+        margin-right 8px
+      &.qygm
+        i
+          image('权益规模icon.png', 80px, 80px)
+
+      &.ljcs
+        i
+          image('历届参赛icon.png', 80px, 80px)
+      &.jyl
+        i
+          image('净盈利icon.png', 80px, 80px)
+    .line
+      flex 1
+      max-width 2px
+      h1 = 50px
+      margin-top ((h - h1) / 2)
+      height h1
+      //todo 缺——色彩信息
+      background linear-gradient(#5d8dba 2px, transparent 0)
+      background-size: auto 6px;
+  .chart-wapper
+    h = 240px
+    height 240px
+    //todo 缺——间隙数据
+    margin-top 55px
+    display flex
+    .chart
+      flex 1
+      display flex
+      .nav
+        //todo 缺——背景色
+        background-color #f0f0f0
+        .item
+          padding-right 10px
+          text-align center
+          color #195aa7
+          &.active
+            color #fff
+        &.nav150
+          w = 150px
+          h = 60px
+          width w - 10px
+          margin-right 10px
+          .item
+            width w - 10px
+            height h
+            line-height h
+            &.active
+              background-image('150.png')
+        &.nav140
+          w = 140px
+          h = 40px
+          width w - 10px
+          margin-right 10px
+          .item
+            width w - 10px
+            height h
+            line-height h
+            &.active
+              background-image('140.png')
+      #chart1
+        flex 1
+        background-color #111111
+      #chart2
+        flex 1
+        background-color #111111
+    .line
+      w = 3px
+      h1 = 60px
+      flex 1
+      max-width w
+      margin-top ((h - h1) / 2)
+      height h1
+      //todo 缺——色彩信息
+      background linear-gradient(#5d8dba w, transparent 0)
+      background-size: auto (w * 2);
