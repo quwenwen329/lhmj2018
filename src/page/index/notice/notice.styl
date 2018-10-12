@@ -6,7 +6,9 @@ $notice-color = #ef5637
 .notice-wapper
   height $notice-height
   line-height $notice-height
-  box-shadow 0px 0px 20px rgba(0,0,0,0.5)
+  box-shadow 0px 5px 5px rgba(0,0,0,0.3)
+  //解决被背景色覆盖问题
+  transform translate3d(0, 0, 0)
   .notice
     font-size 0
     Context()
