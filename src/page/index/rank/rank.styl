@@ -1,7 +1,11 @@
 @import "../../../components/config.styl"
 
 .rank-wapper
-  margin-top 56px
+  padding-top 56px
+  // todo 切图——背景图片
+  background-color #f0f0f0
+  // todo 缺——底部距离标注
+  padding-bottom 50px
   .rank
     Context()
     .title-wapper
@@ -20,3 +24,74 @@
           color #a7a7a7
         .more
           float right
+    .military-ranks-wapper
+      // todo 切图——导航背景
+      background-color #0074D9
+      display flex
+      margin-top 17px
+      h = 54px
+      height h
+      line-height h
+      .military-ranks
+        flex 1
+        text-align center
+        color #fff
+    .table
+      width 100%
+      text-align center
+      h = 50px
+      h2 = 45px
+      .thead
+        display flex
+        //todo 缺——table背景颜色
+        background-color #e0e0e0
+        height h
+        line-height h
+        margin-bottom h - h2
+        .thead-td
+          flex 11.11%
+          max-width 11.11%
+          color #438fe2
+      .tr
+        height h2
+        line-height h2
+        // todo 缺——分割线数据
+        border-bottom 1px solid #7f7f7f
+        display flex
+        &:last-child
+          border-bottom 0
+        .td
+          flex 11.11%
+          max-width 11.11%
+          &.index
+            font-size 17px
+            .rank-1
+              margin-top 10px
+              image('rank1.png',51px,26px)
+            .rank-2
+              margin-top 10px
+              image('rank2.png',51px,26px)
+            .rank-3
+              margin-top 10px
+              image('rank3.png',51px,26px)
+          &.star
+            //todo 切图——星星
+            i
+              display inline-block
+              width 15px
+              height 15px
+              background-color yellow
+          &.up
+            color #e63636
+            i
+              image('up.png',15px,15px)
+              margin-left 5px
+          &.down
+            color #2cbd36
+            i
+              image('down.png',15px,15px)
+              margin-left 5px
+          &.text-r
+            //todo 数字对齐方式
+            text-align center
+
