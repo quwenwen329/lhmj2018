@@ -1,0 +1,42 @@
+@import "../../../components/config.styl"
+
+.hot-list
+  Context()
+  padding-top 50px
+  padding-bottom 80px
+  .title-wapper
+    text-align center
+    .title
+      //todo 切图——热门榜单图切错了
+      image('title.png', 796px, 49px)
+  .list
+    display flex
+    justify-content space-between
+    margin-top 65px
+    .item
+      image('frame.png', 199px, 259px)
+      text-align center
+      .title
+        margin-top 33px
+        text-align center
+        //todo 缺——尺寸
+        font-size 20px
+      .text
+        margin-top 11px
+        font-size 20px
+        color #e63636
+        &.down
+          color #24a92d
+      .icon
+        margin auto
+        margin-top 10px
+        width 85px
+        height 85px
+        //todo 切图——热门榜单头像
+        background-color #008800
+      .military-rank
+        margin-top 5px
+        color #e63636
+      .ID
+        margin-top 5px
+        color #003333
