@@ -1,0 +1,42 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": [
+    {
+      "title": "日赚净值",
+      "text": "5.2342",
+      "icon": "",
+      "military": "五星上将",
+      "ID": "老男孩"
+    },
+    {
+      "title": "日赚金额",
+      "text": "58.45万",
+      "icon": "",
+      "military": "少将",
+      "ID": "开始觉得满足"
+    },
+    {
+      "title": "周赚金额",
+      "text": "232.23万",
+      "icon": "",
+      "military": "中将",
+      "ID": "金融的本质"
+    },
+    {
+      "title": "当日爆亏",
+      "text": "253.51万",
+      "color":"green",
+      "icon": "",
+      "military": "上将",
+      "ID": "老男孩1"
+    },
+    {
+      "title": "日赚净值",
+      "text": "5.2342",
+      "icon": "",
+      "military": "五星上将",
+      "ID": "老男孩2"
+    }
+  ]
+}
