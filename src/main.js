@@ -7,6 +7,7 @@ import 'swiper/dist/css/swiper.css';
 import ajax from '@/components/js/ajax';
 
 import DhHeader from '@/components/header/header';
+import DhFooter from '@/components/footer/footer'
 
 import Vue from 'vue';
 import App from './App';
@@ -18,6 +19,7 @@ Vue.config.productionTip = false;
 Vue.prototype.ajax = ajax;
 
 Vue.component('DhHeader', DhHeader);
+Vue.component('DhFooter', DhFooter);
 
 /* eslint-disable no-new */
 new Vue({

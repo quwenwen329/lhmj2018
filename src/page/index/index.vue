@@ -10,6 +10,7 @@
       <dh-news>新闻中心</dh-news>
     </div>
     <div>历届荣耀</div>
+    <dh-footer></dh-footer>
   </div>
 </template>
 
