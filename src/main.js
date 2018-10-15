@@ -7,7 +7,7 @@ import 'swiper/dist/css/swiper.css';
 import ajax from '@/components/js/ajax';
 
 import DhHeader from '@/components/header/header';
-import DhFooter from '@/components/footer/footer'
+import DhFooter from '@/components/footer/footer';
 
 import Vue from 'vue';
 import App from './App';
