@@ -7,7 +7,6 @@ $pic-righr-margin = 142px //图片与导航间距
 $color = #fff //字体颜色
 $m-right = 34px //导航时间间距
 $f-login = 12px //登录字体大小
-$m-login = 92px //登录左边距
 
 .header
   position relative
@@ -23,7 +22,8 @@ $m-login = 92px //登录左边距
     background-color $nav-bg-color
     .nav
       position relative
-      $w-context = 1200px
+      width $w-context
+      margin auto
       display flex
       .margin
         m-width = 475px + 20px - $pic-righr-margin
@@ -71,7 +71,7 @@ $m-login = 92px //登录左边距
           margin-right $m-right
           color $color
         .login
-          margin-left $m-login - $m-right
+          float right
           font-size $f-login
           color $color
           a
