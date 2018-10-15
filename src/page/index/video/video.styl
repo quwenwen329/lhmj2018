@@ -1,0 +1,51 @@
+@import "../../../components/config.styl"
+
+.video-wapper
+  padding-top 45px
+  padding-bottom 60px
+  .video
+    Context()
+    .title-wapper
+      text-align center
+      .title
+        image('title.png', 796px, 49px)
+    .info-wapper
+      h = 50px
+      height h
+      line-height h
+      font-size 14px
+      .more
+        float right
+    .swiper-wapper
+      margin auto
+      position relative
+      //width 1010px
+      h = 290px
+      w = 290px
+      .item
+        image('frame.png', w, h)
+        text-align center
+        pw = 234px
+        ph = 158px
+        .pic
+          margin 25px auto
+          width pw
+          height ph
+          background-color #008800
+        .title
+          margin auto
+          width pw
+          font-size 20px
+          color #3368c2
+      ih = 50px
+      iw = 50px
+      .swiper-button-prev
+        left - (iw/ 2) + 5px
+        image('l.png', iw, ih)
+        &.swiper-button-disabled
+          image('l1.png', iw, ih)
+      .swiper-button-next
+        right - (iw/ 2) + 5px
+        image('r.png', iw, ih)
+        &.swiper-button-disabled
+          image('r1.png', iw, ih)

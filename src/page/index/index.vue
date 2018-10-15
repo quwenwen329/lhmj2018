@@ -5,8 +5,10 @@
     <dh-rank>领先排行</dh-rank>
     <dh-hot-list>热门榜单</dh-hot-list>
     <dh-overview>大赛概览</dh-overview>
-    <dh-video>视讯中心</dh-video>
-    <div>新闻中心</div>
+    <div class="video-new">
+      <dh-video>视讯中心</dh-video>
+      <div>新闻中心</div>
+    </div>
     <div>历届荣耀</div>
   </div>
 </template>
