@@ -2,7 +2,7 @@
   <div class="hot-list">
     <div class="title-wapper"><i class="title"></i></div>
     <div class="list">
-      <div class="item" v-for="item in data" :key="item">
+      <div class="item" v-for="item in data" :key="item.ID">
         <div class="title">{{item.title}}</div>
         <div class="text" :class="{'down':item.color=='green'}">
           {{item.text}}
