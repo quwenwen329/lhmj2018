@@ -7,7 +7,7 @@
     <dh-overview>大赛概览</dh-overview>
     <div class="video-new">
       <dh-video>视讯中心</dh-video>
-      <div>新闻中心</div>
+      <dh-news>新闻中心</dh-news>
     </div>
     <div>历届荣耀</div>
   </div>
@@ -19,6 +19,7 @@ import DhRank from './rank/rank';
 import DhHotList from './hotList/hotList';
 import DhOverview from './overview/overview';
 import DhVideo from './video/video';
+import DhNews from './news/news';
 
 export default {
   name: 'Index',
@@ -28,6 +29,7 @@ export default {
     DhHotList,
     DhOverview,
     DhVideo,
+    DhNews,
   },
 };
 </script>
