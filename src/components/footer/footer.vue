@@ -12,12 +12,12 @@
       <div class="line"></div>
       <div class="right">
         <div class="item">
-          <div class="pic"></div>
+          <div class="pic1"></div>
           <div class="text1">蓝海密剑官方微信</div>
           <div class="text2">权威发布最新赛况</div>
         </div>
         <div class="item">
-          <div class="pic"></div>
+          <div class="pic2"></div>
           <div class="text1">东航金融官方微信</div>
           <div class="text2">扫描一下关注我们</div>
         </div>
