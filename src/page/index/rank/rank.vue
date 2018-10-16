@@ -10,7 +10,10 @@
           <a href="/" class="more">第十赛季 >></a>
         </div>
         <div class="military-ranks-wapper">
-          <div v-for="item in militaryRanks" class="military-ranks" :key="item">
+          <div v-for="(item ,index) in militaryRanks"
+               class="military-ranks"
+               :class="{active:index==0}"
+               :key="item">
             {{item}}
           </div>
         </div>
