@@ -109,6 +109,16 @@
           left 50%
           width 4px
           background #2C6CCC
+        &:after
+          content: '';
+          position: absolute;
+          height 14px
+          width 14px
+          border-radius 50%
+          background-color #2C6CCC
+          margin-left -5px
+          left 50%
+          top -7px
         .item
           margin 50px auto
           position relative
@@ -121,7 +131,7 @@
             width 50%
             height 1px
             background-color #b2b2b2
-          zj = 8px
+          zj = 14px
           &:after
             content ''
             position absolute
@@ -129,7 +139,8 @@
             width zj
             border-radius 50%
             background-color #b2b2b2
-            margin-left -(zj/ 4)
+            margin-top -3px
+            margin-left -5.5px
             left 50%
           &:nth-child(2n)
             padding-right 0
@@ -156,7 +167,8 @@
             &:after
               border-radius 50%
               background-color #fff
-              margin-left -(zj/ 4) - 1px
+              margin-top -3px
+              margin-left -6.5px
               border 1px solid #2C6CCC
       .context
         flex 1
