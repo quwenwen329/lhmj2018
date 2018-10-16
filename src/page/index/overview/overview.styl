@@ -54,9 +54,15 @@
       flex 1
       display flex
       .nav
-        //todo 缺——背景色
         background-color #f0f0f0
         .item
+          position relative
+          &:after
+            content ''
+            position absolute
+            image('line.png', 100%, 4px)
+            left 0
+            bottom 0
           padding-right 10px
           text-align center
           color #195aa7

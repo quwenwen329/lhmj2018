@@ -2,9 +2,7 @@
 
 .rank-wapper
   padding-top 56px
-  // todo 切图——背景图片
-  background-color #f0f0f0
-  // todo 缺——底部距离标注
+  background-image("bg.png")
   padding-bottom 50px
   .rank
     Context()
@@ -54,8 +52,7 @@
       .tr
         height h2
         line-height h2
-        // todo 缺——分割线数据
-        border-bottom 1px solid #999999
+        border-bottom 1px solid #ddddde
         display flex
         &:last-child
           border-bottom 0
@@ -74,12 +71,10 @@
               margin-top 10px
               image('rank3.png',51px,26px)
           &.star
-            //todo 切图——星星
             i
               display inline-block
-              width 15px
-              height 15px
-              background-color yellow
+              image('star.png',15px,15px)
+              margin-right 2px
           &.up
             color #e63636
             i
