@@ -9,7 +9,7 @@
       <dh-video>视讯中心</dh-video>
       <dh-news>新闻中心</dh-news>
     </div>
-    <div>历届荣耀</div>
+    <dh-glory>历届荣耀</dh-glory>
     <dh-footer></dh-footer>
   </div>
 </template>
@@ -21,6 +21,7 @@ import DhHotList from './hotList/hotList';
 import DhOverview from './overview/overview';
 import DhVideo from './video/video';
 import DhNews from './news/news';
+import DhGlory from './glory/glory';
 
 export default {
   name: 'Index',
@@ -31,6 +32,7 @@ export default {
     DhOverview,
     DhVideo,
     DhNews,
+    DhGlory,
   },
 };
 </script>

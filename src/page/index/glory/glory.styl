@@ -1,0 +1,194 @@
+@import "../../../components/config.styl"
+
+.glory-wapper
+  padding-top 45px
+  .glory
+    Context()
+    .title-wapper
+      text-align center
+      .title
+        image('title.png', 796px, 49px)
+    .swiper-title-wapper
+      margin-top 48px
+      text-align center
+      .swiper-title
+        image('swiper-title.png', 296px, 39px)
+        line-height 39px
+        font-size 18px
+        color #fff
+    .swiper-wapper
+      width 1060px
+      margin auto
+      margin-top 41px
+      margin-bottom 40px
+      position relative
+      ih = 50px
+      iw = 50px
+      .swiper-button-prev
+        left - iw
+        image('l.png', iw, ih)
+        &.swiper-button-disabled
+          image('l1.png', iw, ih)
+      .swiper-button-next
+        right - iw
+        image('r.png', iw, ih)
+        &.swiper-button-disabled
+          image('r1.png', iw, ih)
+      .item
+        text-align center
+        .pic
+          image('frame.png', 140px, 189px)
+          position relative
+          .title
+            position absolute
+            width 100%
+            bottom 10px
+            font-size 14px
+            color #fff
+    .record
+      h = 157px
+      height h
+      background-color #2C6CCC
+      display flex
+      .icon
+        iw = 127px
+        ih = 62px
+        margin-top ((h - ih) / 2)
+        margin-left 44px
+        margin-right 70px
+        image('icon.png', 127px, 62px)
+        position relative
+        .title
+          position absolute
+          width 100%
+          text-align center
+          color #fff
+          font-size 20px
+          line-height 20px
+          height 20px
+          bottom -30px
+      .text
+        flex 1
+        padding-top: 47.5px;
+        display flex
+        flex-wrap: wrap
+        .item
+          display flex
+          width 50%
+          height 16px
+          line-height 16px
+          .crown
+            image('crown.png', 19px, 17px)
+            margin-right 10px
+          .title
+            color #fff
+            width 128px
+            margin-right 23px
+          .ID
+            color #fff
+            width 96px
+            margin-right 25px
+            text-over(1)
+          .value
+            color #eeb2a6
+            margin-right 5px
+          .up
+            image('up.png', 11px, 14px)
+    .history
+      display flex
+      .nav
+        padding 20px 0
+        width 40%
+        position relative
+        text-align center
+        &:before
+          content ''
+          position absolute
+          top 0
+          bottom 0
+          left 50%
+          width 4px
+          background #2C6CCC
+        .item
+          margin 50px auto
+          position relative
+          padding-right 50%
+          &:before
+            content ''
+            position absolute
+            bottom -5px
+            left 0
+            width 50%
+            height 1px
+            background-color #b2b2b2
+          zj = 8px
+          &:after
+            content ''
+            position absolute
+            height zj
+            width zj
+            border-radius 50%
+            background-color #b2b2b2
+            margin-left -(zj/ 4)
+            left 50%
+          &:nth-child(2n)
+            padding-right 0
+            padding-left 50%
+            &:before
+              left 50%
+          .date
+            font-size 24px
+            color #b2b2b2
+          .session
+            font-size 14px
+            color #b2b2b2
+            margin 5px auto
+          .info
+            font-size 14px
+            color #b2b2b2
+          &.active
+            &:before
+              background-color #2C6CCC
+            .info
+              color #f4635e
+            .date
+              color #f4635e
+            &:after
+              border-radius 50%
+              background-color #fff
+              margin-left -(zj/ 4) - 1px
+              border 1px solid #2C6CCC
+      .context
+        flex 1
+        text-align center
+        .title
+          margin-top 46px
+          line-height 24px
+          font-size 24px
+          color #2c6ccc
+          margin-bottom 23px
+        .info
+          line-height 14px
+          color #333333
+          margin-bottom 42px
+        .table-wapper
+          .text
+            margin-top 30px
+            font-size 16px
+            color #5d8dba
+            margin-bottom 17px
+          table
+            margin auto
+            border-color #a7c3d3
+            border-collapse collapse
+            th
+              background-color #d5e4f9
+              font-size 14px
+              color #502c1d
+              padding 0 25px
+              height 40px
+            td
+              font-size 14px
+              color #646464
+              padding 0 25px
+              height 40px
