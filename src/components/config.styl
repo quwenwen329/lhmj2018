@@ -1,14 +1,17 @@
 @import "~nib/index.styl"
 $f-color = #303030
 $f-size = 16px
-$a-color = #3d8afe
-$a-color = #3c93e3 //todo 和设计确认颜色差距不大能否用一样的
+$a-color = #3c93e3
 $w-context = 1200px
 
 *
   color $f-color
   font-size $f-size
   outline 0
+
+body {
+  font-family: "Microsoft YaHei", FreeSans, Arimo, "Lucida Grande";
+}
 
 html
   min-width $w-context
@@ -40,8 +43,10 @@ image($url, $width, $height)
   background-image ($url)
 
 text-linear-gradient()
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display inline-block
+  -webkit-background-clip text
+  -webkit-text-fill-color transparent
+  color green
 
 text-over($num)
   text-overflow ellipsis

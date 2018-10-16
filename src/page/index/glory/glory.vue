@@ -10,7 +10,7 @@
       <div class="swiper-wapper">
         <swiper :options="swiperOption">
           <!-- slides -->
-          <swiper-slide class="item" v-for="item in [0,1,2,3,4,0,1,2,3,4,]" :key="item">
+          <swiper-slide class="item" v-for="item in [0,1,2,3,4,5,6,7,8,9]" :key="item">
             <div class="pic">
               <div class="title">标题{{item}}</div>
             </div>

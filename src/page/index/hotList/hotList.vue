@@ -7,7 +7,7 @@
         <div class="text" :class="{'down':item.color=='green'}">
           {{item.text}}
         </div>
-        <div class="icon">{{item.url}}</div>
+        <img class="icon" :src="item.icon">
         <div class="military-rank">{{item.military}}</div>
         <div class="ID">{{item.ID}}</div>
       </div>
