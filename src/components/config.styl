@@ -42,3 +42,10 @@ image($url, $width, $height)
 text-linear-gradient()
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+text-over($num)
+  text-overflow ellipsis
+  display -webkit-box
+  -webkit-line-clamp $num
+  -webkit-box-orient vertical
+  overflow hidden
