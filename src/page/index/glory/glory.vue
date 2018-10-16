@@ -272,8 +272,8 @@ export default {
       swiperOption: {
         slidesPerView: 6,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.glory .swiper-button-next',
+          prevEl: '.glory .swiper-button-prev',
         },
       },
     };

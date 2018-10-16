@@ -33,8 +33,8 @@ export default {
       swiperOption: {
         slidesPerView: 3,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.video .swiper-button-next',
+          prevEl: '.video .swiper-button-prev',
         },
       },
     };
