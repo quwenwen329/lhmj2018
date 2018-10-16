@@ -31,6 +31,15 @@
           width pw
           height ph
           background-color #008800
+          position relative
+          &:after
+            content ''
+            position absolute
+            image('play.png', 46px, 46px)
+            left 50%
+            top 50%
+            margin-left -23px
+            margin-top -23px
         .title
           margin auto
           width pw
