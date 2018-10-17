@@ -38,8 +38,7 @@ function video() {
 }
 
 function news() {
-  // todo
-  return axios.get(`${BASEURL}/api/hotlist.json`);
+  return axios.get(`${BASEURL}/api/news.json`);
 }
 
 function glory() {
