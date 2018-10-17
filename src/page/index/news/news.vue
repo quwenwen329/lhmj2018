@@ -5,7 +5,7 @@
       <a href="/" class="more">更多 >></a>
     </div>
     <div class="news">
-      <div class="item" v-for="item in data" :key="item.title">
+      <div class="item" v-for="(item,index) in data" :key="index">
         <img class="pic" :src="item.pic"/>
         <div class="info">
           <div class="title">
