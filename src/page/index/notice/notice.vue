@@ -3,8 +3,8 @@
     <div class="notice">
       <i class="line"></i>
       <span class="title">最新公告</span>
-      <span class="text">十年破晓——2018蓝海密剑中期报告</span>
-      <a href="/" class="more">更多公告 >></a>
+      <a class="text" :href="data[0].url">{{data[0].title}}</a>
+      <a href="#" class="more">更多公告 >></a><!--todo-->
     </div>
   </div>
 </template>
@@ -12,6 +12,25 @@
 <script>
 export default {
   name: 'DhNotice',
+  data() {
+    return {
+      data: [
+        {
+          title: '',
+          url: './',
+        },
+      ],
+    };
+  },
+  created() {
+    this.GetData();
+  },
+  methods: {
+    async GetData() {
+      const data = await this.ajax.notice();
+      this.data = data;
+    },
+  },
 };
 </script>
 

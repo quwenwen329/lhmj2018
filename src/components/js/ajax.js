@@ -15,10 +15,15 @@ axios.interceptors.response.use((response) => {
   throw new Error(err);
 });
 
+function notice() {
+  return axios.get(`${BASEURL}/api/notice.json`);
+}
+
 function hotList() {
   return axios.get(`${BASEURL}/api/hotlist.json`);
 }
 
 export default {
+  notice,
   hotList,
 };

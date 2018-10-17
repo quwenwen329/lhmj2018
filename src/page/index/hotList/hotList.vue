@@ -20,7 +20,7 @@ export default {
   name: 'DhHotList',
   data() {
     return {
-      data: { data: '数据' },
+      data: {},
     };
   },
   created() {
