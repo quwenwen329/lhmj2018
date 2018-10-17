@@ -20,7 +20,6 @@ function notice() {
 }
 
 function ranking() {
-  // todo
   return axios.get(`${BASEURL}/api/ranking.json`);
 }
 
