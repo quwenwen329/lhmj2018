@@ -26,7 +26,7 @@
         text-align right
       i
         vertical-align top
-        margin-right 8px
+        margin-right 20px
       &.qygm
         i
           image('权益规模icon.png', 80px, 80px)
@@ -60,14 +60,16 @@
           &:after
             content ''
             position absolute
-            image('line.png', 100%, 4px)
-            left 0
+            image('line.png', 80%, 4px)
+            left 5%
             bottom 0
           padding-right 10px
           text-align center
           color #195aa7
           &.active
             color #fff
+            &:after
+              display none
         &.nav150
           w = 150px
           h = 60px
@@ -105,3 +107,4 @@
       height h1
       background linear-gradient(#999999 w, transparent 0)
       background-size: auto (w * 2);
+      margin auto 15px

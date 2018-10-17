@@ -3,9 +3,9 @@
     <div class="glory">
       <div class="title-wapper"><i class="title"></i></div>
       <div class="swiper-title-wapper">
-        <i class="swiper-title">
+        <div class="swiper-title">
           盈利过亿将帅风采
-        </i>
+        </div>
       </div>
       <div class="swiper-wapper">
         <swiper :options="swiperOption">
@@ -34,42 +34,42 @@
             <div class="crown"></div>
             <div class="title">年度收益额记录：</div>
             <div class="ID">持赢进取一号</div>
-            <div class="value">1234567890.00</div>
+            <div class="value">12345678.00</div>
             <div class="up"></div>
           </div>
           <div class="item">
             <div class="crown"></div>
             <div class="title">年度收益额记录：</div>
             <div class="ID">持赢进取一号123123</div>
-            <div class="value">1234567890.00</div>
+            <div class="value">12345678.00</div>
             <div class="up"></div>
           </div>
           <div class="item">
             <div class="crown"></div>
             <div class="title">年度收益额记录：</div>
             <div class="ID">持赢</div>
-            <div class="value">1234567890.00</div>
+            <div class="value">12345678.00</div>
             <div class="up"></div>
           </div>
           <div class="item">
             <div class="crown"></div>
             <div class="title">年度收益额记录：</div>
             <div class="ID">持赢</div>
-            <div class="value">1234567890.00</div>
+            <div class="value">12345678.00</div>
             <div class="up"></div>
           </div>
           <div class="item">
             <div class="crown"></div>
             <div class="title">年度收益额记录：</div>
             <div class="ID">持赢</div>
-            <div class="value">1234567890.00</div>
+            <div class="value">12345678.00</div>
             <div class="up"></div>
           </div>
           <div class="item">
             <div class="crown"></div>
             <div class="title">年度收益额记录：</div>
             <div class="ID">持赢</div>
-            <div class="value">1234567890.00</div>
+            <div class="value">12345678.00</div>
             <div class="up"></div>
           </div>
         </div>
@@ -258,6 +258,12 @@
               </tr>
             </table>
           </div>
+          <div class="more">
+            <a href="#">
+              &lt;点击查看更多详情&gt;
+            </a>
+          </div>
+
         </div>
       </div>
     </div>

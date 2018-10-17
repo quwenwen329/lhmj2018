@@ -13,7 +13,7 @@
         <div class="nav nav150">
           <div class="item active">蓝海密剑指数</div>
           <div class="item">选手权益规模</div>
-          <div class="item">盈亏人数统计</div>
+          <div class="item active">盈亏人数统计</div>
           <div class="item">军种分布人数</div>
         </div>
         <div id="chart1"></div>

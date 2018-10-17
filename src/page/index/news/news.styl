@@ -30,22 +30,12 @@
         border 1px solid #8ab8ff
         margin-right 15px
         position relative
-        &:after
-          content 'NEW'
-          position absolute
-          top 8px
-          left 15px
-          color #fff
-          font-size 12px
         &:before
           content ''
           position absolute
           top 0
           left 15px
-          border-color #c81414
-          border-style solid
-          border-width 25px 15px 10px 15px
-          border-bottom-color: transparent
+          image('new.png', 22px, 25px)
       .info
         .title
           font-size 14px
@@ -54,13 +44,12 @@
         .date
           font-size 12px
           color #8c8c8c
-          margin-top 7px
-          margin-bottom 19px
+          margin-top 5px
+          margin-bottom 10px
         .text
           font-size 12px
-          font-weight bold
           color #333333
-          line-height 16px
+          line-height 18px
           text-over(7)
         .more
           a

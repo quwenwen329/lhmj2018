@@ -16,6 +16,7 @@
         line-height 39px
         font-size 18px
         color #fff
+        letter-spacing 1px
     .swiper-wapper
       width 1060px
       margin auto
@@ -53,7 +54,7 @@
       .icon
         iw = 127px
         ih = 62px
-        margin-top ((h - ih) / 2)
+        margin-top 32.5px
         margin-left 44px
         margin-right 70px
         image('icon.png', 127px, 62px)
@@ -69,9 +70,11 @@
           bottom -30px
       .text
         flex 1
-        padding-top: 47.5px;
+        padding-top 32.5px
+        padding-right 44px
+        padding-bottom 10px
         display flex
-        flex-wrap: wrap
+        flex-wrap wrap
         .item
           display flex
           width 50%
@@ -108,7 +111,7 @@
           bottom 0
           left 50%
           width 4px
-          background #2C6CCC
+          background linear-gradient(#2C6CCC 28%, #15060c)
         &:after
           content: '';
           position: absolute;
@@ -150,6 +153,7 @@
           .date
             font-size 24px
             color #b2b2b2
+            font-weight bold
           .session
             font-size 14px
             color #b2b2b2
@@ -159,17 +163,25 @@
             color #b2b2b2
           &.active
             &:before
-              background-color #2C6CCC
+              background-color #3c93e3
             .info
               color #f4635e
             .date
               color #f4635e
+              position relative
+              &:before
+                content ''
+                position absolute
+                image('plan.png', 32px, 32px)
+                top -44px
+                left 50%
+                margin-left -16px
             &:after
               border-radius 50%
               background-color #fff
               margin-top -3px
               margin-left -6.5px
-              border 1px solid #2C6CCC
+              border 1px solid #3c93e3
       .context
         flex 1
         text-align center
@@ -179,6 +191,8 @@
           font-size 24px
           color #2c6ccc
           margin-bottom 23px
+          font-weight bold
+          letter-spacing 1px
         .info
           line-height 14px
           color #333333
@@ -189,9 +203,10 @@
             font-size 16px
             color #5d8dba
             margin-bottom 17px
+          table,table tr th, table tr td
+            border:1px solid #a7c3d3
           table
             margin auto
-            border-color #a7c3d3
             border-collapse collapse
             th
               background-color #d5e4f9
@@ -204,3 +219,5 @@
               color #646464
               padding 0 25px
               height 40px
+        .more
+          margin-top 30px
