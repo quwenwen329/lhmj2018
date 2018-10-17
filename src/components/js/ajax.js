@@ -19,11 +19,40 @@ function notice() {
   return axios.get(`${BASEURL}/api/notice.json`);
 }
 
+function ranking() {
+  // todo
+  return axios.get(`${BASEURL}/api/ranking.json`);
+}
+
 function hotList() {
+  return axios.get(`${BASEURL}/api/hotlist.json`);
+}
+
+function overview() {
+  // todo
+  return axios.get(`${BASEURL}/api/hotlist.json`);
+}
+
+function video() {
+  return axios.get(`${BASEURL}/api/video.json`);
+}
+
+function news() {
+  // todo
+  return axios.get(`${BASEURL}/api/hotlist.json`);
+}
+
+function glory() {
+  // todo
   return axios.get(`${BASEURL}/api/hotlist.json`);
 }
 
 export default {
   notice,
+  ranking,
   hotList,
+  overview,
+  video,
+  news,
+  glory,
 };
