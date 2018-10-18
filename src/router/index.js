@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Index from '@/page/index/index';
 import todo from '@/page/todo';
+import dsgg from '@/page/xwgg/dsgg';
 
 Vue.use(Router);
 
@@ -26,7 +27,7 @@ export default new Router({
     }, {
       path: '/xwgg',
       name: '新闻公告',
-      component: todo,
+      component: dsgg,
     }, {
       path: '/ljry',
       name: '历届荣耀',
