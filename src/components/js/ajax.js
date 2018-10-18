@@ -28,8 +28,7 @@ function hotList() {
 }
 
 function overview() {
-  // todo
-  return axios.get(`${BASEURL}/api/hotlist.json`);
+  return axios.get(`${BASEURL}/api/overview.json`);
 }
 
 function video() {
