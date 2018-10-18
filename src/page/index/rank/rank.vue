@@ -12,42 +12,38 @@
         <div class="military-ranks-wapper">
           <div v-for="(item ,index) in militaryRanks"
                class="military-ranks"
-               :class="{active:index==0}"
-               :key="item">
-            {{item}}
+               :class="{active:item.id==CmilitaryRanks}"
+               @click="CmilitaryRanks=item.id"
+               :key="index">
+            {{item.name}}
           </div>
         </div>
         <div class="table">
           <div class="thead">
-            <div class="thead-td" v-for="item in tableTitles" :key="item">
+            <div class="thead-td"
+                 v-for="item in tableTitles"
+                 v-if="!(CmilitaryRanks!=='zhpj'&&item=='综合评级')"
+                 :class="{star:item=='综合评级'}"
+                 :key="item">
               {{item}}
             </div>
           </div>
-          <div class="tr" v-for="index1 in [0,1,2,3,4,5,6,7,8]" :key="index1">
+          <div class="tr" v-for="(item,index) in data[CmilitaryRanks]" :key="index">
             <div class="td index">
-              <i v-if="index1+1<=3" :class="{ 'rank-1': index1+1==1,
-               'rank-2': index1+1==2,'rank-3': index1+1==3}"></i>
-              <span v-if="index1+1>3">{{index1+1}}</span>
+              <i v-if="index+1<=3" :class="{ 'rank-1': index+1==1,
+               'rank-2': index+1==2,'rank-3': index+1==3}"></i>
+              <span v-if="index+1>3">{{index+1}}</span>
             </div>
-            <div class="td">选手名称</div>
-            <div class="td star"><i></i></div>
-            <div class="td up">4.4018<i></i></div>
-            <div class="td text-r">1234567890.00</div>
-            <div class="td text-r">0.00</div>
-            <div class="td text-r">0.00</div>
-            <div class="td text-r">00.00%</div>
-            <div class="td">五星上将</div>
-          </div>
-          <div class="tr">
-            <div class="td index">10</div>
-            <div class="td">选手名称</div>
-            <div class="td star"><i></i><i></i><i></i></div>
-            <div class="td down">0.4018<i></i></div>
-            <div class="td text-r">1234567890.00</div>
-            <div class="td text-r">0.00</div>
-            <div class="td text-r">0.00</div>
-            <div class="td text-r">00.00%</div>
-            <div class="td">五星上将</div>
+            <div class="td">{{item.ID}}</div>
+            <div class="td star" v-if="CmilitaryRanks=='zhpj'">
+              <i v-for="(item,index) in new Array(item.star)" :key="index"></i>
+            </div>
+            <div class="td " :class="item.bjjzicon">{{item.bjjz}}<i></i></div>
+            <div class="td text-r">{{item.yle}}</div>
+            <div class="td text-r">{{item.cw}}</div>
+            <div class="td text-r">{{item.pcykb}}</div>
+            <div class="td text-r">{{item.jysl}}%</div>
+            <div class="td">{{item.xj}}</div>
           </div>
         </div>
       </div>
@@ -60,13 +56,33 @@ export default {
   name: 'DhRank',
   data() {
     return {
-      militaryRanks: ['综合评级', '全部选手', '基金组', '集团军', '导弹部队',
-        '空军', '海军', '预备役', '机枪手', '远征军', '盟军'],
+      CmilitaryRanks: 'zhpj',
+      militaryRanks: [
+        { id: 'zhpj', name: '综合评级' },
+        { id: 'qbxs', name: '全部选手' },
+        { id: 'jjz', name: '基金组' },
+        { id: 'jtj', name: '集团军' },
+        { id: 'ddbd', name: '导弹部队' },
+        { id: 'kj', name: '空军' },
+        { id: 'hj', name: '海军' },
+        { id: 'yby', name: '预备役' },
+        { id: 'jqs', name: '机枪手' },
+        { id: 'yzj', name: '远征军' },
+        { id: 'mj', name: '盟军' },
+      ],
       tableTitles: ['排名', '选手名称', '综合评级', '本届净值', '盈利额',
         '仓位', '平仓盈亏比', '交易胜率', '衔级'],
-      data1: ['1000', '选手名称选手名称', '综合评级综合评级综合评级', '1.0000', '12345678901234.00',
-        '0.12', '1.66', '56.56%', '五星上将'],
+      data: [],
     };
+  },
+  created() {
+    this.GetData();
+  },
+  methods: {
+    async GetData() {
+      const data = await this.ajax.ranking();
+      this.data = data;
+    },
   },
 };
 </script>
