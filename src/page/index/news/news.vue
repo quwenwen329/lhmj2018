@@ -31,27 +31,7 @@ export default {
   name: 'DhNews',
   data() {
     return {
-      data: [
-        {
-          title: '',
-          date: '',
-          url: './',
-          pic: './',
-          info: '',
-        }, {
-          title: '',
-          date: '',
-          url: './',
-          pic: './',
-          info: '',
-        }, {
-          title: '',
-          date: '',
-          url: './',
-          pic: './',
-          info: '',
-        },
-      ],
+      data: [],
     };
   },
   created() {

@@ -34,13 +34,7 @@ export default {
           prevEl: '.video .swiper-button-prev',
         },
       },
-      data: [
-        {
-          title: '',
-          url: './',
-          pic: './',
-        },
-      ],
+      data: [],
     };
   },
   created() {

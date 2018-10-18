@@ -3,7 +3,8 @@
     <div class="notice">
       <i class="line"></i>
       <span class="title">最新公告</span>
-      <a class="text" :href="data[0].url">{{data[0].title}}</a>
+      <a class="text" v-for="(itme,index) in data" :key="index" v-if="index==0"
+         :href="itme.url">{{itme.title}}</a>
       <a href="#" class="more">更多公告 >></a><!--todo-->
     </div>
   </div>
@@ -14,12 +15,7 @@ export default {
   name: 'DhNotice',
   data() {
     return {
-      data: [
-        {
-          title: '',
-          url: './',
-        },
-      ],
+      data: [],
     };
   },
   created() {
