@@ -5,21 +5,18 @@
       <a href="/" class="more">更多 >></a>
     </div>
     <div class="news">
-      <div class="item" v-for="item in [0,1,2,]" :key="item">
-        <div class="pic"></div>
+      <div class="item" v-for="(item,index) in data" :key="index">
+        <img class="pic" :src="item.pic"/>
         <div class="info">
           <div class="title">
-            十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告
+            {{item.title}}
           </div>
-          <div class="date">时间:2018-07-02</div>
+          <div class="date">时间:{{item.date}}</div>
           <div class="text">
-            十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告
-            十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告
-            十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告
-            十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告十年破晓——2018蓝海密剑中期报告
+            {{item.info}}
           </div>
           <div class="more">
-            <a href="/" class="more">
+            <a :href="item.url" class="more">
               &lt;详情&gt;
             </a>
           </div>
@@ -32,6 +29,20 @@
 <script>
 export default {
   name: 'DhNews',
+  data() {
+    return {
+      data: [],
+    };
+  },
+  created() {
+    this.GetData();
+  },
+  methods: {
+    async GetData() {
+      const data = await this.ajax.news();
+      this.data = data;
+    },
+  },
 };
 </script>
 
