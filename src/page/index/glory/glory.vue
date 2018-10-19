@@ -48,7 +48,7 @@ import index from '../../../router';
           </div>
 
         </div>
-        <div class="context" v-if="data.history[Chistory].context">
+        <div class="context" v-if="data.history">
           <div class="title">
             {{data.history[Chistory].context.title}}
           </div>
@@ -78,7 +78,6 @@ import index from '../../../router';
               &lt;点击查看更多详情&gt;
             </a>
           </div>
-
         </div>
       </div>
     </div>
