@@ -40,8 +40,7 @@ function news() {
 }
 
 function glory() {
-  // todo
-  return axios.get(`${BASEURL}/api/hotlist.json`);
+  return axios.get(`${BASEURL}/api/glory.json`);
 }
 
 export default {
