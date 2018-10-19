@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const BASEURL = '/static/api';
-// const BASEURL = '/api';
+// const BASEURL = '/static/api';
+const BASEURL = '/api';
 
 const ERROR = {
   SUCCESS: { CODE: '0', MSG: '成功' },
@@ -17,31 +17,31 @@ axios.interceptors.response.use((response) => {
 });
 
 function notice() {
-  return axios.get(`${BASEURL}/index/notice.do`);
+  return axios.get(`${BASEURL}/public/index/notice.do`);
 }
 
 function ranking() {
-  return axios.get(`${BASEURL}/index/ranking.do`);
+  return axios.get(`${BASEURL}/public/index/ranking.do`);
 }
 
 function hotList() {
-  return axios.get(`${BASEURL}/index/hotlist.do`);
+  return axios.get(`${BASEURL}/public/index/hotlist.do`);
 }
 
 function overview() {
-  return axios.get(`${BASEURL}/index/overview.do`);
+  return axios.get(`${BASEURL}/public/index/overview.do`);
 }
 
 function video() {
-  return axios.get(`${BASEURL}/index/video.do`);
+  return axios.get(`${BASEURL}/public/index/video.do`);
 }
 
 function news() {
-  return axios.get(`${BASEURL}/index/news.do`);
+  return axios.get(`${BASEURL}/public/index/news.do`);
 }
 
 function glory() {
-  return axios.get(`${BASEURL}/index/glory.do`);
+  return axios.get(`${BASEURL}/public/index/glory.do`);
 }
 
 export default {

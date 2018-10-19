@@ -14,9 +14,6 @@ module.exports = {
       '/api': {
         target: 'http://lhmjtest.kiiik.com/',
         changeOrigin: true,
-        pathRewrite: {
-          '^/api': '/public'
-        }
       }
     },
     // Various Dev Server settings
