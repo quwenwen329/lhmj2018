@@ -6,47 +6,47 @@
       {
         "title": "1",
         "url": "./static/img/icon5.png",
-        "pic": "./static/img/icon5.png"
+        "pic": "http://dummyimage.com/140x189"
       },
       {
         "title": "2",
         "url": "./static/img/icon5.png",
-        "pic": "./static/img/icon5.png"
+        "pic": "http://dummyimage.com/140x189"
       },
       {
         "title": "3",
         "url": "./static/img/icon5.png",
-        "pic": "./static/img/icon5.png"
+        "pic": "http://dummyimage.com/140x189"
       },
       {
         "title": "4",
         "url": "./static/img/icon5.png",
-        "pic": "./static/img/icon5.png"
+        "pic": "http://dummyimage.com/140x189"
       },
       {
         "title": "5",
         "url": "./static/img/icon5.png",
-        "pic": "./static/img/icon5.png"
+        "pic": "http://dummyimage.com/140x189"
       },
       {
         "title": "6",
         "url": "./static/img/icon5.png",
-        "pic": "./static/img/icon5.png"
+        "pic": "http://dummyimage.com/140x189"
       },
       {
         "title": "7",
         "url": "./static/img/icon5.png",
-        "pic": "./static/img/icon5.png"
+        "pic": "http://dummyimage.com/140x189"
       },
       {
         "title": "8",
         "url": "./static/img/icon5.png",
-        "pic": "./static/img/icon5.png"
+        "pic": "http://dummyimage.com/140x189"
       },
       {
         "title": "9",
         "url": "./static/img/icon5.png",
-        "pic": "./static/img/icon5.png"
+        "pic": "http://dummyimage.com/140x189"
       }
     ],
     "record": [
