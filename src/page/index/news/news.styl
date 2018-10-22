@@ -18,7 +18,6 @@
     image('frame.png', 1160px, 339px)
     display flex
     .item
-      flex 1
       display flex
       margin 0 25px
       padding-top 76px
@@ -37,10 +36,11 @@
           left 15px
           image('new.png', 22px, 25px)
       .info
+        max-width 170px
         .title
           font-size 14px
           font-weight bold
-          text-over(2)
+          text-over()
         .date
           font-size 12px
           color #8c8c8c
@@ -50,7 +50,8 @@
           font-size 12px
           color #333333
           line-height 18px
-          text-over(7)
+          overflow hidden
+          max-height 144px
         .more
           a
             font-size 12px
