@@ -21,10 +21,10 @@
         <div class="table">
           <div class="thead">
             <div class="thead-td"
-                 v-for="item in tableTitles"
+                 v-for="(item,index) in tableTitles"
                  v-if="!(CmilitaryRanks!=='zhpj'&&item=='综合评级')"
                  :class="{star:item=='综合评级'}"
-                 :key="item">
+                 :key="index">
               {{item}}
             </div>
           </div>
