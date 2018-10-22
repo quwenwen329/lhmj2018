@@ -4,6 +4,26 @@ $f-size = 16px
 $a-color = #3c93e3
 $w-context = 1200px
 
+*
+  color $f-color
+  font-size $f-size
+  outline 0
+
+body {
+  font-family: "Microsoft YaHei", FreeSans, Arimo, "Lucida Grande";
+}
+
+html
+  min-width $w-context
+
+a
+  text-decoration none
+  color $a-color
+  &:hover
+    color $a-color !important
+  &.router-link-exact-active
+    color $a-color !important
+
 Context()
   width $w-context - 40px
   padding 0 20px
