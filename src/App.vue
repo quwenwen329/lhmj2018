@@ -10,5 +10,5 @@ export default {
 };
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "./components/config.styl";
+  @import "App.styl";
 </style>
