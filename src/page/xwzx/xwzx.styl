@@ -1,0 +1,53 @@
+.xwzx-announcement
+  .xwzx-need-bg
+    position relative
+    overflow hidden
+    .bg
+      position absolute
+      width 100%
+      height: 984px
+      z-index -1
+      background: linear-gradient(#dce4ec 35%, #f7f9fb 65%);
+  .title-wapper
+    margin  40px 0 30px
+    text-align center
+    .img-title
+      image('xwzx.png', 796px, 49px)
+  .content
+    position relative
+    box-sizing border-box
+    margin 55px auto 70px
+    padding 0 40px 40px
+    width $w-context
+    background-color #fff
+    border 1px solid #e5e5e5
+    &:before
+      content ''
+      display block
+      position: absolute;
+      top: -30px;
+      left: 0;
+      image('border-top.png', 1199px, 30px)
+    .one-content
+      margin-top 15px
+      background-color #eee
+      height 39px
+      line-height 38px
+      color $f-color
+      font-size $f-
+      &:hover
+        background-color #e4fefd
+        color #3c93e3
+        cursor pointer
+      .time
+        display inline-block
+        padding-left 10px
+        width 110px
+        height 100%
+        background-color #e4f1fd
+        font-weight bold
+        border-left 2px solid #3c93e3
+      .title
+        display inline-block
+        padding-left 10px
+        height 100%

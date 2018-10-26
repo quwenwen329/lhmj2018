@@ -3,7 +3,8 @@
     <div class="video">
       <div class="title-wapper"><i class="title"></i></div>
       <div class="info-wapper">
-        <a href="/" class="more">更多 >></a>
+        <!--<a href="/" class="more">更多 >></a>-->
+        <router-link :to="{ name: '视讯中心'}" class="more">更多 >></router-link>
       </div>
       <div class="swiper-wapper">
         <swiper :options="swiperOption">

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const BASEURL = '/static/api';
-const BASEURL = '/api';
+const BASEURL = '/static/api';
+// const BASEURL = '/api';
 
 const ERROR = {
   SUCCESS: { CODE: '0', MSG: '成功' },
@@ -44,6 +44,22 @@ function glory() {
   return axios.get(`${BASEURL}/public/index/glory.do`);
 }
 
+function getXWZXList() {
+  return axios.get(`${BASEURL}/public/announcement/xwzxlist.do`);
+}
+
+function getXWZXDetail() {
+  return axios.get(`${BASEURL}/public/announcement/xwzxDetail.do`);
+}
+
+function getSXZXList() {
+  return axios.get(`${BASEURL}/public/announcement/sxzxlist.do`);
+}
+
+function getSXZXDetail() {
+  return axios.get(`${BASEURL}/public/announcement/sxzxDetail.do`);
+}
+
 export default {
   notice,
   ranking,
@@ -52,4 +68,8 @@ export default {
   video,
   news,
   glory,
+  getXWZXList,
+  getXWZXDetail,
+  getSXZXList,
+  getSXZXDetail,
 };

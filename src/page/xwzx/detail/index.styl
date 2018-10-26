@@ -1,0 +1,54 @@
+.announcement-detail
+  .need-bg
+    position relative
+    overflow hidden
+    .bg
+      position absolute
+      width 100%
+      height: 984px
+      z-index -1
+      background: linear-gradient(#dce4ec 35%, #f7f9fb 65%);
+  .title-wapper
+    margin  40px 0 30px
+    text-align center
+    .img-title
+      image('../xwzx.png', 796px, 49px)
+  .content
+    position relative
+    box-sizing border-box
+    margin 55px auto
+    padding 0 50px 25px
+    width $w-context
+    background-color #fff
+    border 1px solid #e5e5e5
+    &:before
+      content ''
+      display block
+      position: absolute;
+      top: -30px;
+      left: 0;
+      image('../border-top.png', 1199px, 30px)
+    .title
+      margin-top 10px
+      font-size 20px
+      color $font-blue-color
+      text-align center
+      line-height 1
+      font-weight bold
+    .time
+      margin-top 15px
+      font-size $f-size
+      color $f-color
+      text-align center
+      line-height 1
+      font-weight bold
+    .article
+      margin-top 34px
+      color $f-color
+      font-size $f-size
+      p
+        margin 28px 0 0
+      .xwzx-paragraph
+        text-indent 32px
+        line-height 28px
+        margin-bottom 30px

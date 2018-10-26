@@ -2,7 +2,8 @@
   <div class="news-wapper">
     <div class="title-wapper"><i class="title"></i></div>
     <div class="info-wapper">
-      <a href="/" class="more">更多 >></a>
+      <!--<a href="/" class="more">更多 >></a>-->
+      <router-link :to="{ name: '新闻公告'}" class="more">更多 >></router-link>
     </div>
     <div class="news">
       <div class="item" v-for="(item,index) in data" :key="index">
